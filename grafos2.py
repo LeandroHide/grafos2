@@ -201,10 +201,8 @@ class Grafos:
         print(*a, sep = ", ")
 
 grafo2 = Grafos()
-grafo2.ler("C:\Programmer\Python\Grafos\dirigidos\manha.net")
+grafo2.ler("exemplos/manha.net")
 grafo2.fortemente_conexas()
 grafo2.ordenacao_topologica()
 
-grafo1 = Grafos()
-grafo1.ler("C:\Programmer\Python\Grafos\\arvore_geradora_minima\\agm_tiny.net")
-grafo1.kruskal()
+
