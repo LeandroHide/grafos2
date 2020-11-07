@@ -200,9 +200,24 @@ class Grafos:
         print(somatorio)
         print(*a, sep = ", ")
 
-grafo2 = Grafos()
-grafo2.ler("exemplos/manha.net")
-grafo2.fortemente_conexas()
-grafo2.ordenacao_topologica()
+print("Componentes fortementes conexos:")
+
+exemplo1 = Grafos()
+exemplo1.ler("exemplos/dirigido2.net")
+exemplo1.fortemente_conexas()
+
+print()
+print("Ordenacao topologica")
+exemplo2 = Grafos()
+exemplo2.ler("exemplos/manha.net")
+exemplo2.ordenacao_topologica()
+
+print()
+print("Kruskal")
+exemplo3 = Grafos()
+exemplo3.ler("exemplos/agm_tiny.net")
+exemplo3.kruskal()
+
+
 
 
